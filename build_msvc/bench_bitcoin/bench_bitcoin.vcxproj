@@ -132,7 +132,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <Linkage-secp256k1>static</Linkage-secp256k1>
-    <IncludePath>E:\src\boost_1_72_0;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..\..\src\boost_1_72_0;E:\src\boost_1_72_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
