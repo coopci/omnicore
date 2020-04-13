@@ -25,3 +25,8 @@ build好的.lib文件在E:\src\libevent\build64\lib\Debug
 选择build x64 并把libzmq11 改成static library。
 
 build得到 E:\src\zeromq4-x\bin\x64\libzmq_d.lib
+
+
+
+项目内的boost是从https://www.boost.org/users/download/下载的boost_1_72_0.tar.bz2
+https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2 可以验证没有改变
