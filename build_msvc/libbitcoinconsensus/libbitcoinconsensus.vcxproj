@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Label="configInitTarget" Project="..\common.init.vcxproj" />
   <ItemGroup Label="ProjectConfigurations">
@@ -108,6 +108,7 @@
     <LinkIncremental>true</LinkIncremental>
     <Linkage-secp256k1>
     </Linkage-secp256k1>
+    <IncludePath>E:\src\boost_1_72_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -145,6 +146,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
