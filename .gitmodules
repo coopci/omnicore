@@ -1,0 +1,3 @@
+[submodule "zeromq4-x"]
+	path = zeromq4-x
+	url = https://github.com/coopci/zeromq4-x.git
