@@ -8,4 +8,3 @@ packages/*
 */Release
 */x64
 *.vcxproj.user
-*.vcxproj
