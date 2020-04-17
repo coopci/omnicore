@@ -34,6 +34,17 @@
 //
 
 #include <string>
+// Increase with every consensus affecting change
+#define OMNICORE_VERSION_MAJOR       0
+
+// Increase with every non-consensus affecting feature
+#define OMNICORE_VERSION_MINOR       8
+
+// Increase with every patch, which is not a feature or consensus affecting
+#define OMNICORE_VERSION_PATCH       1
+
+// Non-public build number/revision (usually zero)
+#define OMNICORE_VERSION_BUILD       0
 
 //! Omni Core client version
 static const int OMNICORE_VERSION =
