@@ -4,3 +4,6 @@
 [submodule "libevent"]
 	path = libevent
 	url = https://github.com/coopci/libevent.git
+[submodule "berkeleydb-18.1.32"]
+	path = berkeleydb
+	url = https://github.com/coopci/berkeleydb.git
