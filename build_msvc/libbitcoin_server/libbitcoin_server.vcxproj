@@ -224,7 +224,12 @@
     <ClCompile Include="..\..\src\noui.cpp">
       <ObjectFileName>$(IntDir)noui.obj</ObjectFileName>
     </ClCompile>
+    <ClCompile Include="..\..\src\omnicore\dbbase.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbfees.cpp" />
+    <ClCompile Include="..\..\src\omnicore\dbtransaction.cpp" />
+    <ClCompile Include="..\..\src\omnicore\dbtxlist.cpp" />
+    <ClCompile Include="..\..\src\omnicore\notifications.cpp" />
+    <ClCompile Include="..\..\src\omnicore\omnicore.cpp" />
     <ClCompile Include="..\..\src\omnicore\rpc.cpp" />
     <ClCompile Include="..\..\src\outputtype.cpp">
       <ObjectFileName>$(IntDir)outputtype.obj</ObjectFileName>
