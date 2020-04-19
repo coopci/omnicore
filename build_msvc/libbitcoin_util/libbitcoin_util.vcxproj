@@ -172,6 +172,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\omnicore\log.cpp" />
     <ClCompile Include="..\..\src\omnicore\utilsui.cpp" />
     <ClCompile Include="..\..\src\support\lockedpool.cpp">
       <ObjectFileName>$(IntDir)support_lockedpool.obj</ObjectFileName>
