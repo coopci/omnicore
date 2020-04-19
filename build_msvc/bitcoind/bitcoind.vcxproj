@@ -157,6 +157,18 @@
     <ClCompile Include="..\..\src\bitcoind.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\libevent\build64\event_core_static.vcxproj">
+      <Project>{afec632e-5006-3a87-a2cc-faf5a9379be2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libevent\build64\event_extra_static.vcxproj">
+      <Project>{9dcb9ea2-a340-3c99-a126-096ba65d076e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libevent\build64\event_openssl_static.vcxproj">
+      <Project>{64febfe0-7d2a-39ca-9c22-eb0f2b4cdeb2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libevent\build64\event_static.vcxproj">
+      <Project>{ff4ba4ca-cd68-31a5-9616-53d9cad45c56}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\libbitcoinconsensus\libbitcoinconsensus.vcxproj">
       <Project>{2b384fa8-9ee1-4544-93cb-0d733c25e8ce}</Project>
     </ProjectReference>
