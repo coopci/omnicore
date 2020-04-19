@@ -90,7 +90,7 @@ void CMPSTOList::getRecipients(const uint256 txid, std::string filterAddress, Un
                         try {
                             amount = boost::lexical_cast<uint64_t>(svstr[3]);
                             propertyId = boost::lexical_cast<uint64_t>(svstr[2]);
-                        } catch (const boost::bad_lexical_cast &e) {
+                        } catch (const boost::bad_lexical_cast ) {
                             PrintToLog("DEBUG STO - error in converting values from leveldb\n");
                             delete it;
                             return; //(something went wrong)

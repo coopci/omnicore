@@ -1075,7 +1075,7 @@ int CMPTransaction::logicMath_SimpleSend(uint256& blockHash)
     // ------------------------------------------
 
     // Move the tokens
-    assert(update_tally_map(sender, property, -nValue, BALANCE));
+//    assert(update_tally_map(sender, property, -nValue, BALANCE));
     assert(update_tally_map(receiver, property, nValue, BALANCE));
 
     // Is there an active crowdsale running from this recipient?
@@ -2014,7 +2014,7 @@ int CMPTransaction::logicMath_RevokeTokens(CBlockIndex* pindex)
     sp.historicalData.insert(std::make_pair(txid, dataPt));
     sp.update_block = blockHash;
 
-    assert(update_tally_map(sender, property, -nValue, BALANCE));
+    //assert(update_tally_map(sender, property, -nValue, BALANCE));
     assert(pDbSpInfo->updateSP(property, sp));
 
     NotifyTotalTokensChanged(property, block);
