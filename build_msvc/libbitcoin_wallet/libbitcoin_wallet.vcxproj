@@ -23,6 +23,7 @@
     <ClCompile Include="..\..\src\interfaces\wallet.cpp">
       <ObjectFileName>$(IntDir)interfaces_wallet.obj</ObjectFileName>
     </ClCompile>
+    <ClCompile Include="..\..\src\omnicore\walletcache.cpp" />
     <ClCompile Include="..\..\src\wallet\coincontrol.cpp">
       <ObjectFileName>$(IntDir)wallet_coincontrol.obj</ObjectFileName>
     </ClCompile>

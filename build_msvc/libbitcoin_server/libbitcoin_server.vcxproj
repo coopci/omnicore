@@ -226,11 +226,19 @@
     </ClCompile>
     <ClCompile Include="..\..\src\omnicore\dbbase.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbfees.cpp" />
+    <ClCompile Include="..\..\src\omnicore\dbstolist.cpp" />
+    <ClCompile Include="..\..\src\omnicore\dbtradelist.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbtransaction.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbtxlist.cpp" />
+    <ClCompile Include="..\..\src\omnicore\dex.cpp" />
     <ClCompile Include="..\..\src\omnicore\notifications.cpp" />
     <ClCompile Include="..\..\src\omnicore\omnicore.cpp" />
+    <ClCompile Include="..\..\src\omnicore\parsing.cpp" />
+    <ClCompile Include="..\..\src\omnicore\pending.cpp" />
     <ClCompile Include="..\..\src\omnicore\rpc.cpp" />
+    <ClCompile Include="..\..\src\omnicore\rpcpayload.cpp" />
+    <ClCompile Include="..\..\src\omnicore\rpctx.cpp" />
+    <ClCompile Include="..\..\src\omnicore\tx.cpp" />
     <ClCompile Include="..\..\src\outputtype.cpp">
       <ObjectFileName>$(IntDir)outputtype.obj</ObjectFileName>
     </ClCompile>
