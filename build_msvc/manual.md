@@ -31,4 +31,5 @@ build得到 E:\src\zeromq4-x\bin\x64\libzmq_d.lib
 项目内的boost是从https://www.boost.org/users/download/下载的boost_1_72_0.tar.bz2
 https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2 可以验证没有改变
 要这样build boost: 
+./bootstrap.bat
 ./b2 address-model=64 toolset=msvc-141 link=static --build-type=complete stage --with-filesystem --with-system --with-thread --with-date_time
