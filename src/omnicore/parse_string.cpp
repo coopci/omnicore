@@ -51,13 +51,13 @@ int64_t StrToInt64(const std::string& str, bool divisible)
         strAmount.erase(std::remove(strAmount.begin(), strAmount.end(), '.'), strAmount.end());
         try {
             nAmount = boost::lexical_cast<int64_t>(strAmount);
-        } catch (const boost::bad_lexical_cast &e) {}
+        } catch (const boost::bad_lexical_cast &) {}
     } else {
         size_t pos = strAmount.find(".");
         std::string newStrAmount = strAmount.substr(0, pos);
         try {
             nAmount = boost::lexical_cast<int64_t>(newStrAmount);
-        } catch (const boost::bad_lexical_cast &e) {}
+        } catch (const boost::bad_lexical_cast &) {}
     }
 
     return nAmount;
