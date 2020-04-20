@@ -94,6 +94,7 @@
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(ProjectDir)..\..\zeromq4-x\include;$(ProjectDir)..\..\libevent\build64\include;E:\src\openssl-1.1.0c-64bit-debug-static-VS2015\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/std:c++14</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -224,21 +225,50 @@
     <ClCompile Include="..\..\src\noui.cpp">
       <ObjectFileName>$(IntDir)noui.obj</ObjectFileName>
     </ClCompile>
+    <ClCompile Include="..\..\src\omnicore\activation.cpp" />
+    <ClCompile Include="..\..\src\omnicore\consensushash.cpp" />
+    <ClCompile Include="..\..\src\omnicore\convert.cpp" />
+    <ClCompile Include="..\..\src\omnicore\createpayload.cpp" />
+    <ClCompile Include="..\..\src\omnicore\createtx.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbbase.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbfees.cpp" />
+    <ClCompile Include="..\..\src\omnicore\dbspinfo.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbstolist.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbtradelist.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbtransaction.cpp" />
     <ClCompile Include="..\..\src\omnicore\dbtxlist.cpp" />
     <ClCompile Include="..\..\src\omnicore\dex.cpp" />
+    <ClCompile Include="..\..\src\omnicore\encoding.cpp" />
+    <ClCompile Include="..\..\src\omnicore\log.cpp" />
+    <ClCompile Include="..\..\src\omnicore\mdex.cpp" />
     <ClCompile Include="..\..\src\omnicore\notifications.cpp" />
     <ClCompile Include="..\..\src\omnicore\omnicore.cpp" />
+    <ClCompile Include="..\..\src\omnicore\parse_string.cpp" />
     <ClCompile Include="..\..\src\omnicore\parsing.cpp" />
     <ClCompile Include="..\..\src\omnicore\pending.cpp" />
+    <ClCompile Include="..\..\src\omnicore\persistence.cpp" />
     <ClCompile Include="..\..\src\omnicore\rpc.cpp" />
+    <ClCompile Include="..\..\src\omnicore\rpcmbstring.cpp" />
     <ClCompile Include="..\..\src\omnicore\rpcpayload.cpp" />
+    <ClCompile Include="..\..\src\omnicore\rpcrawtx.cpp" />
+    <ClCompile Include="..\..\src\omnicore\rpcrequirements.cpp" />
     <ClCompile Include="..\..\src\omnicore\rpctx.cpp" />
+    <ClCompile Include="..\..\src\omnicore\rpctxobject.cpp" />
+    <ClCompile Include="..\..\src\omnicore\rpcvalues.cpp" />
+    <ClCompile Include="..\..\src\omnicore\rules.cpp" />
+    <ClCompile Include="..\..\src\omnicore\script.cpp" />
+    <ClCompile Include="..\..\src\omnicore\seedblocks.cpp" />
+    <ClCompile Include="..\..\src\omnicore\sp.cpp" />
+    <ClCompile Include="..\..\src\omnicore\sto.cpp" />
+    <ClCompile Include="..\..\src\omnicore\tally.cpp" />
     <ClCompile Include="..\..\src\omnicore\tx.cpp" />
+    <ClCompile Include="..\..\src\omnicore\utilsbitcoin.cpp" />
+    <ClCompile Include="..\..\src\omnicore\utilsui.cpp" />
+    <ClCompile Include="..\..\src\omnicore\version.cpp" />
+    <ClCompile Include="..\..\src\omnicore\walletcache.cpp" />
+    <ClCompile Include="..\..\src\omnicore\walletfetchtxs.cpp" />
+    <ClCompile Include="..\..\src\omnicore\wallettxbuilder.cpp" />
+    <ClCompile Include="..\..\src\omnicore\walletutils.cpp" />
     <ClCompile Include="..\..\src\outputtype.cpp">
       <ObjectFileName>$(IntDir)outputtype.obj</ObjectFileName>
     </ClCompile>
