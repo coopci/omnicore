@@ -99,7 +99,7 @@ static const char* FEE_ESTIMATES_FILENAME="fee_estimates.dat";
 // Omni Core initialization and shutdown handlers
 extern int mastercore_init();
 extern int mastercore_shutdown();
-extern int CheckWalletUpdate(bool forceUpdate = false);
+extern void CheckWalletUpdate(bool forceUpdate);
 
 /**
  * The PID file facilities.
@@ -1733,7 +1733,7 @@ bool AppInitMain(InitInterfaces& interfaces)
     }
 
     // Omni Core code should be initialized and wallet should now be loaded, perform an initial populat$
-    CheckWalletUpdate();
+    CheckWalletUpdate(false);
 
     // ********************************************************* Step 10: data directory maintenance
 
