@@ -26,11 +26,26 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\libevent\build64\event_core_static.vcxproj">
+      <Project>{afec632e-5006-3a87-a2cc-faf5a9379be2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libevent\build64\event_extra_static.vcxproj">
+      <Project>{9dcb9ea2-a340-3c99-a126-096ba65d076e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libevent\build64\event_openssl_static.vcxproj">
+      <Project>{64febfe0-7d2a-39ca-9c22-eb0f2b4cdeb2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libevent\build64\event_static.vcxproj">
+      <Project>{ff4ba4ca-cd68-31a5-9616-53d9cad45c56}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\libbitcoin_cli\libbitcoin_cli.vcxproj">
       <Project>{0667528c-d734-4009-adf9-c0d6c4a5a5a6}</Project>
     </ProjectReference>
     <ProjectReference Include="..\libbitcoin_crypto\libbitcoin_crypto.vcxproj">
       <Project>{6190199c-6cf4-4dad-bfbd-93fa72a760c1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libbitcoin_server\libbitcoin_server.vcxproj">
+      <Project>{460fee33-1fe1-483f-b3bf-931ff8e969a5}</Project>
     </ProjectReference>
     <ProjectReference Include="..\libbitcoin_util\libbitcoin_util.vcxproj">
       <Project>{b53a5535-ee9d-4c6f-9a26-f79ee3bc3754}</Project>
@@ -152,7 +167,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>crypt32.lib;Iphlpapi.lib;ws2_32.lib;Shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>crypt32.lib;Iphlpapi.lib;ws2_32.lib;Shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;E:\src\openssl-1.1.0c-64bit-debug-static-VS2015\lib\libcrypto.lib;E:\src\openssl-1.1.0c-64bit-debug-static-VS2015\lib\libssl.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>E:\src\boost_1_72_0_\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
