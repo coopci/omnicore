@@ -74,7 +74,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)..\..\berkeleydb\build_windows;$(ProjectDir)..\..\libevent\include;$(ProjectDir)..\..\src\boost_1_72_0;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..\..\berkeleydb\build_windows;$(ProjectDir)..\..\libevent\include;$(ProjectDir)..\..\boost_1_72_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
