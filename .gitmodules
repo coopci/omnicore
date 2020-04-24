@@ -7,3 +7,6 @@
 [submodule "berkeleydb-18.1.32"]
 	path = berkeleydb
 	url = https://github.com/coopci/berkeleydb.git
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/coopci/openssl.git
