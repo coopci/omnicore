@@ -24,8 +24,11 @@ nmake # build，如果成功的话会得到libcrypto.lib和libssl.lib
 项目内的boost是从https://www.boost.org/users/download/下载的boost_1_72_0.tar.bz2
 下载 https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2 并解压到boost_1_72_0
 要这样build boost: 
+
 git submodule update --init boost_1_72_0 # 不要用recursive，否则会很慢。
 cd boost_1_72_0
+
+git submodule update --init # 下载 boost的子模块 这个步骤可能很慢，可以尝试https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2 并替并将其中的libs目录和tools目录解压到当前目录。
 
 # 只下载需要的boost submodule:
 git submodule update --init libs/filesystem
@@ -36,6 +39,7 @@ git submodule update --init libs/system
 
 git submodule update --init libs/thread
 
+git submodule update --init libs/chrono
 git submodule update --init libs/date_time
 
 git submodule update --init libs/multiprecision
@@ -44,10 +48,18 @@ git submodule update --init tools/build
 
 git submodule update --init tools/boost_install
 
+git submodule update --init libs/config
+git submodule update --init libs/headers
+git submodule update --init libs/static_assert
+git submodule update --init libs/assert
+git submodule update --init libs/type_traits
+git submodule update --init libs/winapi
+git submodule update --init libs/predef
+git submodule update --init libs/core
 
-
-./bootstrap.bat
-./b2 address-model=64 toolset=msvc-141 link=static --build-type=complete stage --with-filesystem --with-system --with-thread --with-date_time --with-multiprecision
+.\bootstrap.bat
+.\b2 headers
+.\b2 address-model=64 toolset=msvc-141 link=static --build-type=complete stage --with-filesystem --with-system --with-thread --with-date_time --with-multiprecision
 
 
 ./b2 address-model=64 link=static --build-type=complete stage --with-filesystem --with-system --with-thread --with-date_time --with-multiprecision
